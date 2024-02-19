@@ -148,6 +148,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "Kirjautumisikkuna";
             this.Text = "Kirjautumisikkuna";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
