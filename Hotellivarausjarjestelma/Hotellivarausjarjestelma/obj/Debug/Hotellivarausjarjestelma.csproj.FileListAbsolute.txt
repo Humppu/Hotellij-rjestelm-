@@ -6,3 +6,4 @@ C:\Users\Ribulz\source\repos\ohjelmistokehittäjä\Hotellivarausjarjestelma\Hote
 C:\Users\Ribulz\source\repos\ohjelmistokehittäjä\Hotellivarausjarjestelma\Hotellivarausjarjestelma\obj\Debug\Hotellivarausjarjestelma.Properties.Resources.resources
 C:\Users\Ribulz\source\repos\ohjelmistokehittäjä\Hotellivarausjarjestelma\Hotellivarausjarjestelma\obj\Debug\Hotellivarausjarjestelma.csproj.GenerateResource.cache
 C:\Users\Ribulz\source\repos\ohjelmistokehittäjä\Hotellivarausjarjestelma\Hotellivarausjarjestelma\obj\Debug\Hotellivarausjarjestelma.csproj.CoreCompileInputs.cache
+C:\Users\Ribulz\source\repos\ohjelmistokehittäjä\Hotellivarausjarjestelma\Hotellivarausjarjestelma\obj\Debug\Hotellivarausjarjestelma.HuoneidenHallinta.resources
