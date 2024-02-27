@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 13.02.2024 klo 13:13
+-- Generation Time: 27.02.2024 klo 07:56
 -- Palvelimen versio: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -43,6 +43,65 @@ CREATE TABLE `asiakkaat` (
 
 INSERT INTO `asiakkaat` (`ktunnus`, `Etunimi`, `Sukunimi`, `Lahiosoite`, `Postinumero`, `Postitoimipaikka`, `Salasana`) VALUES
 ('kekkurtt', 'Keke', 'Kurttila', 'helsingintie 15', '06541', 'Mäntsälä', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Rakenne taululle `huoneet`
+--
+
+CREATE TABLE `huoneet` (
+  `HuoneenNro` int(6) NOT NULL,
+  `Huonetyyppi` int(5) NOT NULL,
+  `Puhelin` varchar(7) NOT NULL,
+  `Vapaa` varchar(7) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Rakenne taululle `huonekategoria`
+--
+
+CREATE TABLE `huonekategoria` (
+  `KategoriaId` int(12) NOT NULL,
+  `Huonetyyppi` varchar(10) NOT NULL,
+  `Hinta` decimal(10,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Rakenne taululle `varaukset`
+--
+
+CREATE TABLE `varaukset` (
+  `VarausId` int(11) NOT NULL,
+  `HuoneenNro` int(11) NOT NULL,
+  `AsiakasId` int(11) NOT NULL,
+  `DateIn` date NOT NULL,
+  `DateOut` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `varaukset`
+--
+ALTER TABLE `varaukset`
+  ADD PRIMARY KEY (`VarausId`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `varaukset`
+--
+ALTER TABLE `varaukset`
+  MODIFY `VarausId` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
